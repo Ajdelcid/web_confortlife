@@ -1,6 +1,12 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
 
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+
 #navbar1{
     background-color: #1F3643;
 }
@@ -9,18 +15,33 @@
     background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
 .darken-grey-text {
-    color: #2E2E2E;
-}
+    color: #1F3643;
+}   
 
 .navbar .dropdown-menu a:hover {
     color: #616161 !important;
 }
 .darken-grey-text {
-    color: #2E2E2E;
+    color: #1F3643;
 }
 
 #img1 {
+        padding-left: 50px;
         max-width: 100%;
         height: auto;
 }
 
+#img2 {
+    padding-left: 50px;
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto';font-size: 20px;
+}
+.bg-voilet {background-color :  #1F3643 !important;}
+.text-voilet {color :  #1F3643 !important;}
+.bg-1 {
+ background-image: url("https://images.pexels.com/photos/693776/pexels-photo-693776.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+ background-color: #1F3643;
+}
