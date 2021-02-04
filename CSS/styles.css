@@ -9,6 +9,7 @@
 
 #navbar1{
     background-color: #1F3643;
+    opacity: 85%;
 }
 
 .hm-gradient {
@@ -32,8 +33,42 @@
 }
 
 #img2 {
-    padding-left: 50px;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    margin-top: 100px;
+    left: 50%;
+}
+
+
+#img3 {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    margin-top: 100px;
+    left: 50%;
+}
+
+#img4 {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    margin-top: 100px;
+    left: 50%;
+}
+
+#img5 {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    margin-top: 100px;
+    left: 50%;
+}
+
+#imgc {
     width: 100%;
+    position: relative;
+    margin: 40px;
 }
 
 body {
@@ -45,3 +80,29 @@ body {
  background-image: url("https://images.pexels.com/photos/693776/pexels-photo-693776.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
  background-color: #1F3643;
 }
+
+#container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .col-side {
+    flex: 0 0 240px;
+  }
+  
+  #col2 { flex: 1; }
+  
+  #container > div + div {
+    border-left: 0px solid rgba(0, 0, 0, 0.12);
+  }
+  
+  #col1 {
+       
+    }
+  #col2 { 
+      
+    }
+  #col3 { 
+      
+    }
+  body  { margin: 0; }
