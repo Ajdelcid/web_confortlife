@@ -26,6 +26,13 @@
     color: #1F3643;
 }
 
+#img2_p {
+  height: 100%;  
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+
 #img1 {
         padding-left: 50px;
         max-width: 100%;
@@ -79,6 +86,13 @@ body {
 .bg-1 {
  background-image: url("https://images.pexels.com/photos/693776/pexels-photo-693776.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
  background-color: #1F3643;
+}
+
+#carrusel {
+  height: 600px;  
+  width: 100%;
+  left: 0px;
+  top: 0px;
 }
 
 #container {
