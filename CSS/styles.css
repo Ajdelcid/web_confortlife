@@ -470,7 +470,8 @@ body {
   #img6 {
     position: relative;
     margin-top: 40px;
-    width: 55vw;
+    width: 80vw;
+    left: 14%;
   }
 
   #img8 {
