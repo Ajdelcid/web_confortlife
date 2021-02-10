@@ -209,6 +209,19 @@
   position: absolute;
 }
 
+#formulariod{
+  border-radius: 30px;
+  margin: 25px;
+  padding: 25px;
+  width: 35vw;
+  background-color: #000000;
+  color: white;
+  opacity: 70%;
+  margin-top: 12%;
+  left: 55%;
+  position: absolute;
+}
+
 #formname{
   max-width: 95%;
   color: #000000;
@@ -227,11 +240,61 @@
   background-color: white;
 }
 
+#formdate{
+  max-width: 95%;
+  color: #000000;
+  background-color: white;
+  
+}
+
+#formplace{
+  max-width: 95%;
+  color: #000000;
+  background-color: white;
+}
 #formmsg{
   color: #000000;
   max-width: 100%;
   background-color: white;
 }
+/*garantias */
+
+ #formnameg{
+  max-width: 95%;
+  color: #000000;
+  background-color: white;
+}
+
+#formphoneg{
+  max-width: 95%;
+  color: #000000;
+  background-color: white;
+}
+
+#formemailg{
+  max-width: 95%;
+  color: #000000;
+  background-color: white;
+}
+
+#formdateg{
+  max-width: 95%;
+  color: #000000;
+  background-color: white;
+  
+}
+
+#formplaceg{
+  max-width: 95%;
+  color: #000000;
+  background-color: white;
+}
+#formmsgg{
+  color: #000000;
+  max-width: 100%;
+  background-color: white;
+}
+
 
 #enviar{
   width: 95%;
