@@ -101,10 +101,10 @@
 }
 
 #img6 {
-  width: 70vw;
+  width: 55vw;
   position: relative;
   margin-top: -100px;
-  left: 25%;
+  left: 43%;
 }
 
 
@@ -122,17 +122,73 @@
 }
 
 .texto1{
-  margin-top: 20px;
-  text-align: center;
-  font-size: 54px;
-  color: #005F95;
+  display: none;
 }
 
 .texto2{
-  margin-top: -20px;
+  display: none;
+}
+
+.texto3{
+  display: none;
+}
+
+.texto4{
+  display: none;
+}
+
+.texto1-1{
+  position: absolute;
+  margin-top: 10%;
+  display: block;
   text-align: center;
-  font-size: 38px;
   color: #005F95;
+  font-size: 44px;
+  left: 20%;
+}
+
+.texto2-1{
+  position: absolute;
+  display: block;
+  text-align: center;
+  color: #005F95;
+  margin-top: 14%;
+  font-size: 33px;
+  left: 20%;
+}
+
+.texto3-1{
+  width: 30vw;
+  position: absolute;
+  display: block;
+  color: #005F95;
+  font-size: 44px;
+  left: 8%;
+}
+
+.texto4-1{
+  width: 30vw;
+  position: absolute;
+  display: block;
+  color: #005F95;
+  margin-top: 10%;
+  font-size: 33px;
+  left: 8%;
+}
+
+#productosbtn{
+  width: 20vw;
+  height: 3.5vw;
+  background-color: rgb(13, 13, 83);
+  position:absolute;
+  display: block;
+  margin-top: 28%;
+  left: 12%;
+  font-size: 16px;
+}
+
+#productosbtn1{
+  display: none;
 }
 
 #imgc {
@@ -283,14 +339,60 @@ body {
   }
 
   .texto1{
+    margin-top: 25px;
+    display: block;
     text-align: center;
+    color: #005F95;
     font-size: 24px;
   }
 
   .texto2{
+    display: block;
     text-align: center;
+    color: #005F95;
+    margin-top: -15px;
     font-size: 18px;
   }
 
+  .texto3{
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+    color: #005F95;
+    font-size: 24px;
+  }
+
+  .texto4{
+    display: block;
+    text-align: center;
+    color: #005F95;
+    margin-top: -15px;
+    font-size: 18px;
+  }
+
+  .texto1-1{
+    display: none;
+  }
+
+  .texto2-1{
+    display: none;
+  }
+
+  .texto3-1{
+    display: none;
+  }
+
+  .texto4-1{
+    display: none;
+  }
+
+  #productosbtn{
+    display: none;
+  }
   
+  #productosbtn1{
+    position:absolute;
+    display: block;
+  }
+
 }
