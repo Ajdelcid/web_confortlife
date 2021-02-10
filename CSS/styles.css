@@ -145,6 +145,7 @@
   display: block;
   text-align: center;
   color: #005F95;
+  font-weight: bold;
   font-size: 44px;
   left: 20%;
 }
@@ -164,6 +165,7 @@
   position: absolute;
   display: block;
   color: #005F95;
+  font-weight: bold;
   font-size: 44px;
   left: 8%;
 }
@@ -179,6 +181,7 @@
 }
 
 #productosbtn{
+  border-radius: 25px;
   width: 20vw;
   height: 3.5vw;
   background-color: rgb(13, 13, 83);
@@ -193,7 +196,90 @@
   display: none;
 }
 
+#formularioc{
+  border-radius: 30px;
+  margin: 25px;
+  padding: 25px;
+  width: 35vw;
+  background-color: #000000;
+  color: white;
+  opacity: 70%;
+  margin-top: 12%;
+  left: 5%;
+  position: absolute;
+}
+
+#formname{
+  max-width: 95%;
+  color: #000000;
+  background-color: white;
+}
+
+#formphone{
+  max-width: 95%;
+  color: #000000;
+  background-color: white;
+}
+
+#formemail{
+  max-width: 95%;
+  color: #000000;
+  background-color: white;
+}
+
+#formmsg{
+  color: #000000;
+  max-width: 100%;
+  background-color: white;
+}
+
+#enviar{
+  width: 95%;
+  text-align: center;
+  border-radius: 25px;
+  background-color: rgb(13, 13, 83);
+  font-size: 16px;
+}
+
+
+#formularioc1{
+  display: none;
+}
+
+#formname1{
+  display: none;
+}
+
+#formphone1{
+  display: none;
+}
+
+#formemail1{
+  display: none;
+}
+
+#formmsg1{
+  display: none;
+}
+
+#enviar1{
+  display: none;
+}
+
+
+#img9{
+  width: 35%;
+  position: relative;
+  left: 60%;
+}
+
+#img9-1{
+  display: none;
+}
+
+
 #imgc {
+    position: relative;
     width: 100%;
     position: relative;
     margin: 40px;
@@ -273,6 +359,7 @@ body {
    text-align: left;
 }
 
+/* ------------------------------------ A partir de aquí empieza el estilo para Max 1366p------------------------------------------*/
 
 @media (max-width: 1366px) {
   .facet_sidebar {
@@ -282,31 +369,6 @@ body {
   
   #carrusel {
     height: 600px;  
-    width: 100%;
-    left: 0px;
-    top: 0px;
-  }
-
-}
-
-@media (max-width: 720px) {
-  .facet_sidebar {
-    display: none;
-  }
-
-  #carrusel {
-    height: 400px;  
-    width: 100%;
-    left: 0px;
-    top: 0px;
-  }
-
-}
-
-@media (max-width: 640px) {
-
-  #carrusel {
-    height: 320px;  
     width: 100%;
     left: 0px;
     top: 0px;
@@ -322,22 +384,21 @@ body {
   }
 
   #img2 {
-    width: 100%;
+    width: 100vw;
     position: relative;
     margin-top: 40px;
 }
 
   #img6 {
-    width: 75%;
     position: relative;
     margin-top: 40px;
+    width: 100vw;
   }
 
   #img8 {
-    width: 100%;
+    width: 100vw;
     position: relative;
     margin-top: 40px;
-    left: 50%;
   }
 
   .texto1{
@@ -393,8 +454,304 @@ body {
   }
   
   #productosbtn1{
-    position:absolute;
+    border-radius: 25px;
+    position:relative;
     display: block;
+    text-align: center;
+    background-color: rgb(13, 13, 83);
+  }
+  
+}
+
+/* ------------------------------------ A partir de aquí empieza el estilo para Max 720p ------------------------------------------*/
+
+@media (max-width: 720px) {
+  .facet_sidebar {
+    display: none;
+  }
+
+  #carrusel {
+    height: 400px;  
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+
+  #img1 {
+    padding-left: 10px;
+    max-width: 80%;
+  }
+
+  .facet_sidebar {
+    display: none;
+  }
+
+  #img2 {
+    width: 100vw;
+    position: relative;
+    margin-top: 40px;
+}
+
+  #img6 {
+    position: relative;
+    margin-top: 40px;
+    width: 100vw;
+  }
+
+  #img8 {
+    width: 100vw;
+    position: relative;
+    margin-top: 40px;
+  }
+
+  .texto1{
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+    color: #005F95;
+    font-size: 24px;
+  }
+
+  .texto2{
+    display: block;
+    text-align: center;
+    color: #005F95;
+    margin-top: -15px;
+    font-size: 18px;
+  }
+
+  .texto3{
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+    color: #005F95;
+    font-size: 24px;
+  }
+
+  .texto4{
+    display: block;
+    text-align: center;
+    color: #005F95;
+    margin-top: -15px;
+    font-size: 18px;
+  }
+
+  .texto1-1{
+    display: none;
+  }
+
+  .texto2-1{
+    display: none;
+  }
+
+  .texto3-1{
+    display: none;
+  }
+
+  .texto4-1{
+    display: none;
+  }
+
+  #productosbtn{
+    display: none;
+  }
+  
+  #productosbtn1{
+    border-radius: 25px;
+    position:relative;
+    display: block;
+    text-align: center;
+    background-color: rgb(13, 13, 83);
+  }
+
+
+}
+
+
+/* ------------------------------------ A partir de aquí empieza el estilo para dispositivo móvil ------------------------------------------*/
+
+@media (max-width: 640px) {
+
+  #carrusel {
+    height: 320px;  
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
+
+  #img1 {
+    padding-left: 10px;
+    max-width: 80%;
+  }
+
+  .facet_sidebar {
+    display: none;
+  }
+
+  #img2 {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+}
+
+  #img6 {
+    position: relative;
+    margin-top: 40px;
+    left: auto;
+    width: 100%;
+  }
+
+  #img8 {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+    left: 50%;
+  }
+
+  .texto1{
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+    color: #005F95;
+    font-weight: bold;
+    font-size: 34px;
+  }
+
+  .texto2{
+    display: block;
+    text-align: center;
+    color: #005F95;
+    margin-top: -15px;
+    font-size: 24px;
+  }
+
+  .texto3{
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+    color: #005F95;
+    font-weight: bold;
+    font-size: 34px;
+  }
+
+  .texto4{
+    display: block;
+    text-align: center;
+    color: #005F95;
+    margin-top: -15px;
+    font-size: 24px;
+  }
+
+  .texto1-1{
+    display: none;
+  }
+
+  .texto2-1{
+    display: none;
+  }
+
+  .texto3-1{
+    display: none;
+  }
+
+  .texto4-1{
+    display: none;
+  }
+
+  #productosbtn{
+    display: none;
+  }
+  
+  #productosbtn1{
+    border-radius: 25px;
+    position:relative;
+    display: block;
+    text-align: center;
+    background-color: #1f3643;
+  }
+
+  #formularioc{
+    display: none;
+  }
+  
+  #formname{
+    display: none;
+  }
+  
+  #formphone{
+    display: none;
+  }
+  
+  #formemail{
+    display: none;
+  }
+  
+  #formmsg{
+    display: none;
+  }
+  
+  #enviar{
+    display: none;
+  }
+
+  #formularioc1{
+    display: block;
+    border-radius: 30px;
+    margin: 5px;
+    padding: 25px;
+    background-color: #000000;
+    color: white;
+    opacity: 70%;
+    margin-top: 8%;
+    position: relative;
+  }
+  
+  #formname1{
+    color: #000000;
+    display: block;
+    max-width: 90%;
+    background-color: white;
+  }
+  
+  #formphone1{
+    color: #000000;
+    display: block;
+    max-width: 90%;
+    background-color: white;
+  }
+  
+  #formemail1{
+    color: #000000;
+    display: block;
+    max-width: 90%;
+    background-color: white;
+  }
+  
+  #formmsg1{
+    color: #000000;
+    display: block;
+    background-color: white;
+  }
+  
+  #enviar1{
+    position: relative;
+    display: block;
+    width: 95%;
+    border-radius: 25px;
+    background-color: rgb(13, 13, 83);
+    font-size: 16px;
+  }
+
+  #img9-1{
+    max-width: 100%;
+    display: block;
+    position: relative;
+    margin: 5px;
+    padding: 25px;
+  }
+
+  #img9{
+    display: none;
   }
 
 }
