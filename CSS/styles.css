@@ -143,6 +143,7 @@
   display: block;
   text-align: center;
   color: #005F95;
+  font-weight: bold;
   font-size: 44px;
   left: 20%;
 }
@@ -162,6 +163,7 @@
   position: absolute;
   display: block;
   color: #005F95;
+  font-weight: bold;
   font-size: 44px;
   left: 8%;
 }
@@ -609,7 +611,8 @@ body {
     display: block;
     text-align: center;
     color: #005F95;
-    font-size: 24px;
+    font-weight: bold;
+    font-size: 34px;
   }
 
   .texto2{
@@ -617,7 +620,7 @@ body {
     text-align: center;
     color: #005F95;
     margin-top: -15px;
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .texto3{
@@ -625,7 +628,8 @@ body {
     display: block;
     text-align: center;
     color: #005F95;
-    font-size: 24px;
+    font-weight: bold;
+    font-size: 34px;
   }
 
   .texto4{
@@ -633,7 +637,7 @@ body {
     text-align: center;
     color: #005F95;
     margin-top: -15px;
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .texto1-1{
