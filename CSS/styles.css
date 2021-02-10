@@ -194,40 +194,52 @@
   display: none;
 }
 
+#productosbtn6{
+  display: none;
+}
+
 #formularioc{
   border-radius: 30px;
   margin: 25px;
   padding: 25px;
   width: 35vw;
-  background-color: #000000;
+  background-color: rgba(31, 54, 67, 0.8);
   color: white;
-  opacity: 70%;
   margin-top: 12%;
   left: 5%;
   position: absolute;
 }
 
 #formname{
+  border-radius: 15px;
   max-width: 95%;
   color: #000000;
+  opacity: inherit;
   background-color: white;
 }
 
 #formphone{
+  border-radius: 15px;
   max-width: 95%;
   color: #000000;
+  opacity: inherit;
   background-color: white;
 }
 
 #formemail{
+  border-radius: 15px;
   max-width: 95%;
   color: #000000;
+  opacity: inherit;
   background-color: white;
 }
 
 #formmsg{
+  border-radius: 15px;
   color: #000000;
+  opacity: 100%;
   max-width: 100%;
+  opacity: inherit;
   background-color: white;
 }
 
@@ -275,6 +287,9 @@
   display: none;
 }
 
+#img9-2{
+  display: none;
+}
 
 #imgc {
     position: relative;
@@ -390,7 +405,7 @@ body {
   #img6 {
     position: relative;
     margin-top: 40px;
-    width: 100vw;
+    width: 55vw;
   }
 
   #img8 {
@@ -399,12 +414,22 @@ body {
     margin-top: 40px;
   }
 
+  
+  #productosbtn6{
+    border-radius: 25px;
+    position:relative;
+    display: block;
+    text-align: center;
+    background-color: rgb(13, 13, 83);
+  }
+
   .texto1{
-    margin-top: 25px;
+    margin-top: 65px;
     display: block;
     text-align: center;
     color: #005F95;
-    font-size: 24px;
+    font-weight: bold;
+    font-size: 40px;
   }
 
   .texto2{
@@ -412,7 +437,7 @@ body {
     text-align: center;
     color: #005F95;
     margin-top: -15px;
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .texto3{
@@ -420,17 +445,18 @@ body {
     display: block;
     text-align: center;
     color: #005F95;
-    font-size: 24px;
+    font-weight: bold;
+    font-size: 40px;
   }
 
   .texto4{
     display: block;
     text-align: center;
     color: #005F95;
-    margin-top: -15px;
-    font-size: 18px;
+    margin-top: -25px;
+    font-size: 24px;
   }
-
+  
   .texto1-1{
     display: none;
   }
@@ -452,12 +478,76 @@ body {
   }
   
   #productosbtn1{
-    border-radius: 25px;
-    position:relative;
-    display: block;
-    text-align: center;
-    background-color: rgb(13, 13, 83);
+   display: none;
   }
+
+  #formularioc{
+    border-radius: 30px;
+    margin: 25px;
+    padding: 25px;
+    width: 50vw;
+    background-color: rgba(31, 54, 67, 0.8);
+    color: white;
+    margin-top: 12%;
+    left: 20%;
+    position: absolute;
+  }
+  
+  #formname{
+    border-radius: 15px;
+    max-width: 95%;
+    color: #000000;
+    opacity: inherit;
+    background-color: white;
+  }
+  
+  #formphone{
+    border-radius: 15px;
+    max-width: 95%;
+    color: #000000;
+    opacity: inherit;
+    background-color: white;
+  }
+  
+  #formemail{
+    border-radius: 15px;
+    max-width: 95%;
+    color: #000000;
+    opacity: inherit;
+    background-color: white;
+  }
+  
+  #formmsg{
+    border-radius: 15px;
+    color: #000000;
+    opacity: 100%;
+    max-width: 100%;
+    opacity: inherit;
+    background-color: white;
+  }
+  
+  #enviar{
+    width: 95%;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgb(13, 13, 83);
+    font-size: 16px;
+  }
+
+  #img9-2{
+    width: 50vw;
+    position: relative;
+  }
+
+  #img9-1{
+    display: none;
+  }
+
+  #img9{
+    display: none;
+  }
+  
+  
   
 }
 
@@ -507,7 +597,8 @@ body {
     display: block;
     text-align: center;
     color: #005F95;
-    font-size: 24px;
+    font-weight: bold;
+    font-size: 40px;
   }
 
   .texto2{
@@ -515,7 +606,7 @@ body {
     text-align: center;
     color: #005F95;
     margin-top: -15px;
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .texto3{
@@ -523,15 +614,16 @@ body {
     display: block;
     text-align: center;
     color: #005F95;
-    font-size: 24px;
+    font-weight: bold;
+    font-size: 40px;
   }
 
   .texto4{
     display: block;
     text-align: center;
     color: #005F95;
-    margin-top: -15px;
-    font-size: 18px;
+    margin-top: -25px;
+    font-size: 24px;
   }
 
   .texto1-1{
@@ -562,6 +654,17 @@ body {
     background-color: rgb(13, 13, 83);
   }
 
+  #img9-1{
+    display: none;
+  }
+
+  #img9{
+    display: none;
+  }
+
+  #img9-2{
+   display: none; 
+  }
 
 }
 
@@ -607,12 +710,12 @@ body {
   }
 
   .texto1{
-    margin-top: 25px;
+    margin-top: 65px;
     display: block;
     text-align: center;
     color: #005F95;
     font-weight: bold;
-    font-size: 34px;
+    font-size: 40px;
   }
 
   .texto2{
@@ -629,7 +732,7 @@ body {
     text-align: center;
     color: #005F95;
     font-weight: bold;
-    font-size: 34px;
+    font-size: 40px;
   }
 
   .texto4{
@@ -665,7 +768,11 @@ body {
     position:relative;
     display: block;
     text-align: center;
-    background-color: #1f3643;
+    background-color: rgb(13, 13, 83);
+  }
+
+  #productosbtn6{
+    display: none;
   }
 
   #formularioc{
@@ -697,35 +804,38 @@ body {
     border-radius: 30px;
     margin: 5px;
     padding: 25px;
-    background-color: #000000;
+    background-color: rgba(31, 54, 67, 0.8);
     color: white;
-    opacity: 70%;
     margin-top: 8%;
     position: relative;
   }
   
   #formname1{
+    border-radius: 15px;
     color: #000000;
     display: block;
-    max-width: 90%;
+    max-width: 92%;
     background-color: white;
   }
   
   #formphone1{
+    border-radius: 15px;
     color: #000000;
     display: block;
-    max-width: 90%;
+    max-width: 92%;
     background-color: white;
   }
   
   #formemail1{
+    border-radius: 15px;
     color: #000000;
     display: block;
-    max-width: 90%;
+    max-width: 92%;
     background-color: white;
   }
   
   #formmsg1{
+    border-radius: 15px;
     color: #000000;
     display: block;
     background-color: white;
@@ -750,6 +860,10 @@ body {
 
   #img9{
     display: none;
+  }
+
+  #img9-2{
+   display: none; 
   }
 
 }
