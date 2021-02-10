@@ -271,6 +271,7 @@ body {
    text-align: left;
 }
 
+/* ------------------------------------ A partir de aquí empieza el estilo para Max 1366p------------------------------------------*/
 
 @media (max-width: 1366px) {
   .facet_sidebar {
@@ -285,7 +286,95 @@ body {
     top: 0px;
   }
 
+  #img1 {
+    padding-left: 10px;
+    max-width: 80%;
+  }
+
+  .facet_sidebar {
+    display: none;
+  }
+
+  #img2 {
+    width: 100vw;
+    position: relative;
+    margin-top: 40px;
 }
+
+  #img6 {
+    position: relative;
+    margin-top: 40px;
+    width: 100vw;
+  }
+
+  #img8 {
+    width: 100vw;
+    position: relative;
+    margin-top: 40px;
+  }
+
+  .texto1{
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+    color: #005F95;
+    font-size: 24px;
+  }
+
+  .texto2{
+    display: block;
+    text-align: center;
+    color: #005F95;
+    margin-top: -15px;
+    font-size: 18px;
+  }
+
+  .texto3{
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+    color: #005F95;
+    font-size: 24px;
+  }
+
+  .texto4{
+    display: block;
+    text-align: center;
+    color: #005F95;
+    margin-top: -15px;
+    font-size: 18px;
+  }
+
+  .texto1-1{
+    display: none;
+  }
+
+  .texto2-1{
+    display: none;
+  }
+
+  .texto3-1{
+    display: none;
+  }
+
+  .texto4-1{
+    display: none;
+  }
+
+  #productosbtn{
+    display: none;
+  }
+  
+  #productosbtn1{
+    position:relative;
+    display: block;
+    text-align: center;
+    background-color: rgb(13, 13, 83);
+  }
+  
+}
+
+/* ------------------------------------ A partir de aquí empieza el estilo para Max 720p ------------------------------------------*/
 
 @media (max-width: 720px) {
   .facet_sidebar {
@@ -299,7 +388,97 @@ body {
     top: 0px;
   }
 
+  #img1 {
+    padding-left: 10px;
+    max-width: 80%;
+  }
+
+  .facet_sidebar {
+    display: none;
+  }
+
+  #img2 {
+    width: 100vw;
+    position: relative;
+    margin-top: 40px;
 }
+
+  #img6 {
+    position: relative;
+    margin-top: 40px;
+    width: 100vw;
+  }
+
+  #img8 {
+    width: 100vw;
+    position: relative;
+    margin-top: 40px;
+  }
+
+  .texto1{
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+    color: #005F95;
+    font-size: 24px;
+  }
+
+  .texto2{
+    display: block;
+    text-align: center;
+    color: #005F95;
+    margin-top: -15px;
+    font-size: 18px;
+  }
+
+  .texto3{
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+    color: #005F95;
+    font-size: 24px;
+  }
+
+  .texto4{
+    display: block;
+    text-align: center;
+    color: #005F95;
+    margin-top: -15px;
+    font-size: 18px;
+  }
+
+  .texto1-1{
+    display: none;
+  }
+
+  .texto2-1{
+    display: none;
+  }
+
+  .texto3-1{
+    display: none;
+  }
+
+  .texto4-1{
+    display: none;
+  }
+
+  #productosbtn{
+    display: none;
+  }
+  
+  #productosbtn1{
+    position:relative;
+    display: block;
+    text-align: center;
+    background-color: rgb(13, 13, 83);
+  }
+
+
+}
+
+
+/* ------------------------------------ A partir de aquí empieza el estilo para dispositivo móvil ------------------------------------------*/
 
 @media (max-width: 640px) {
 
@@ -326,9 +505,10 @@ body {
 }
 
   #img6 {
-    width: 75%;
     position: relative;
     margin-top: 40px;
+    left: auto;
+    width: 100%;
   }
 
   #img8 {
@@ -391,8 +571,11 @@ body {
   }
   
   #productosbtn1{
-    position:absolute;
+    border-radius: 25px;
+    position:relative;
     display: block;
+    text-align: center;
+    background-color: #1f3643;
   }
 
 }
