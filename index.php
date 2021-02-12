@@ -1,3 +1,24 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "antonio.delcid@camasfacenco.net"; // this is your Email address
+    $from = $_POST['formemail1']; // this is the sender's Email address
+    $formname1 = $_POST['formname1'];
+    $formphone1 = $_POST['formphone1'];
+    $formmsg1 = $_POST['formmsg1'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $formname1 . " " . $formphone1 . " wrote the following:" . "\n\n" . $_POST['formmsg1'];
+    $message2 = "Here is a copy of your message " . $formname1 . "\n\n" . $_POST['formmsg1'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,8 +48,24 @@
 <body>
 
   <script language="Javascript">
-    document.oncontextmenu = function(){return false}
-  </script>
+    document.oncontextmenu = function() {
+       return false
+    }
+    function right(e) {
+       var msg = "Comfort Life, todos los derechos reservados.";
+       if (navigator.appName == 'Netscape' && e.which == 3) {
+          alert(msg); //- Si no quieres asustar a tu usuario entonces quita esta linea...
+          return false;
+       }
+       else if (navigator.appName == 'Microsoft Internet Explorer' && event.button==2) {
+          alert(msg); //- Si no quieres asustar al usuario que utiliza IE,  entonces quita esta linea...
+                         //- Aunque realmente se lo merezca...
+       return false;
+       }
+    return true;
+ }
+ document.onmousedown = right;
+ </script>
   
   <!--Navbar -->
   <nav id="navbar1" class="mb-4 navbar navbar-expand-lg navbar-dark">
@@ -42,19 +79,19 @@
                 <a class="nav-link" href=""></i> Inicio<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="productos.html"></i> Productos</a>
+                <a class="nav-link" href="productos"></i> Productos</a>
             </li>
             <li class="nav-item">
-              <a id="NuevaColeccion" class="nav-link" href="nueva_coleccion.html"></i> Nueva Colección</a>
+              <a id="NuevaColeccion" class="nav-link" href="nueva_coleccion"></i> Nueva Colección</a>
           </li>
             <li class="nav-item">
-              <a class="nav-link" href="materiales.html"></i> Materiales</a>
+              <a class="nav-link" href="materiales"></i> Materiales</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="garantias.html"></i> Garantía</a>
+            <a class="nav-link" href="garantias"></i> Garantía</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contacto.html"></i> Contacto</a>
+          <a class="nav-link" href="contacto"></i> Contacto</a>
       </li>
     
         </ul>
@@ -98,63 +135,55 @@
     <img id="img9-2" src="IMG/Logo Comfort LIfe (A).png">
     <img id="img8" src="IMG/Chico.jpg">
 
-
-    <form id="formularioc" action="/action_page.php">
+    
+    <form id="formularioc" name="formularioc" method="post" action="">
       <h1>Contacto</h1>
       <h4>Llena el formulario y pronto nos comunicaremos contigo</h4>
       <hr color="white" size="5">
       <div class="form-group">
-        <label for="name">Nombre:</label>
-        <input id="formname" type="text" class="form-control">
+        <label for="formname">Nombre:</label>
+        <input id="formname" name="formname" type="text" class="form-control">
       </div>
       <div class="form-group">
-        <label for="phone">Teléfono:</label>
-        <input id="formphone" type="number" class="form-control">
+        <label for="formphone">Teléfono:</label>
+        <input id="formphone" name="formphone" type="number" class="form-control">
       </div>
       <div class="form-group">
-        <label for="email">Correo:</label>
-        <input id="formemail" type="email" class="form-control">
+        <label for="formemail">Correo:</label>
+        <input id="formemail" name="formemail" type="email" class="form-control">
       </div>
       <div class="form-group">
-        <label for="mesage">Mensaje:</label>
-        <textarea id="formmsg" cols="30" rows="10"></textarea>
+        <label for="formmsg">Mensaje:</label>
+        <textarea id="formmsg" name="formmsg" cols="30" rows="10"></textarea>
       </div>
-      <!-- <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-      </div>
-      -->
       <button id="enviar" type="submit" class="btn btn-default">Enviar</button>
     </form>
 
 
-    <form id="formularioc1" action="/action_page.php">
+    <form id="formularioc1" name="formularioc1" method="post" action="" >
       <h3>Contacto</h3>
       <h6>Llena el formulario y pronto nos comunicaremos contigo</h6>
       <hr color="white" size="5">
       <div class="form-group">
-        <label for="name">Nombre:</label>
-        <input id="formname1" type="text" class="form-control">
+        <label for="formname1">Nombre:</label>
+        <input name="formname1" type="text" id="formname1" class="form-control" value="">
       </div>
       <div class="form-group">
-        <label for="phone">Teléfono:</label>
-        <input id="formphone1" type="number" class="form-control">
+        <label for="formphone1">Teléfono:</label>
+        <input id="formphone1" name="formphone1" type="number" class="form-control" value="">
       </div>
       <div class="form-group">
-        <label for="email">Correo:</label>
-        <input id="formemail1" type="email" class="form-control">
+        <label for="formemail1">Correo:</label>
+        <input id="formemail1" name="formemail1" type="email" class="form-control" value="">
       </div>
       <div class="form-group">
-        <label for="mesage">Mensaje:</label>
-        <textarea id="formmsg1" cols="30" rows="10"></textarea>
+        <label for="formmsg1">Mensaje:</label>
+        <textarea id="formmsg1" name="formmsg1" cols="30" rows="10" value=""></textarea>
       </div>
-      <!-- <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-      </div>
-      -->
       <button id="enviar1" type="submit" class="btn btn-default">Enviar</button>
     </form>
 
-       </div>
+    </div>
   </div>
 
 
@@ -169,22 +198,22 @@
                 <ul class="list-unstyled mt-3">
                   <p></p>
                     <div class="mb-2"></div>
-                    <li><i class="fas fa-home"></i><a href="#" class="text-white">  18 Av. 39-24 Zona 12, Guatemala, Guatemala C.A.</a></li>
+                    <li><i class="fas fa-home"></i><a class="text-white">  18 Av. 39-24 Zona 12, Guatemala, Guatemala C.A.</a></li>
                     <p></p>
                     <div class="mb-2"></div>
-                    <li><i class="fas fa-envelope"></i><a href="#" class="text-white"> infor@camasfcomfortlife.com</a></li>
+                    <li><i class="fas fa-envelope"></i><a class="text-white"> infor@camasfcomfortlife.com</a></li>
                     <p></p>
                     <div class="mb-2"></div>
-                    <li><i class="fas fa-mobile-alt"></i><a href="#" class="text-white">  PBX: 2310-6500</a></li>
+                    <li><i class="fas fa-mobile-alt"></i><a class="text-white">  PBX: 2310-6500</a></li>
                 </ul>
             </div>
             <div class="col-md-4">
                     <ul class="list-unstyled mt-0">
                     <li><a href="#" class="text-white">Inicio</a></li>
-                    <li><a href="#" class="text-white">Productos</a></li>
-                    <li><a href="#" class="text-white">Materiales</a></li>
-                    <li><a href="#" class="text-white">Garantía</a></li>
-                    <li><a href="#" class="text-white">Contacto</a></li>
+                    <li><a href="productos.html" class="text-white">Productos</a></li>
+                    <li><a href="materiales.html" class="text-white">Materiales</a></li>
+                    <li><a href="garantias.html" class="text-white">Garantía</a></li>
+                    <li><a href="contacto.html" class="text-white">Contacto</a></li>
                     <li><i id="facebooksquare" class="fab fa-facebook-square fa-2x"></i><a href="#" class="text-white">  /Camas ComfortLife</a></li>
                 </ul>
             </div>
