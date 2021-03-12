@@ -44,6 +44,8 @@ if(isset($_POST['submit'])){
 
   <link rel="stylesheet" href="https://use.typekit.net/kro1arl.css">
 
+  <link  rel="shortcut icon" href="IMG/tortoise.ico" />
+
 </head>
 <body>
 
@@ -74,40 +76,40 @@ if(isset($_POST['submit'])){
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item text-nowrap active">
                 <a class="nav-link" href=""></i> Inicio<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item text-nowrap">
                 <a class="nav-link" href="productos"></i> Productos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="covers"></i> Covers</a>
+            </li>
+            <li class="nav-item text-nowrap">
               <a id="NuevaColeccion" class="nav-link" href="nueva_coleccion"></i> Nueva Colección</a>
           </li>
-            <li class="nav-item">
-              <a class="nav-link" href="materiales"></i> Materiales</a>
+            <li class="nav-item text-nowrap">
+              <a class="nav-link" href="galeria"></i> Galeria</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="garantias"></i> Garantía</a>
+          <li class="nav-item text-nowrap">
+            <a class="nav-link" href="garantias"></i> Servicio al cliente</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contacto"></i> Contacto</a>
-      </li>
     
         </ul>
     </div>
-  </nav>
+  </nav> 
   
 
   <div class="container">
 
-    <p class="texto1">El lujo que mereces</p>
-    <p class="texto2">El descanso que necesitas</p>
-
+    <p class="texto1">Camas con tecnología americana</p>
+    <a  id="productosbtn10" href="productos.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Catálogo  <i class="fas fa-arrow-alt-circle-right"></i></a>
+    <a  id="productosbtn5" href="productos.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Catálogo  <i class="fas fa-arrow-alt-circle-right"></i></a>
     <div class="row">
     <img id="img2" src="IMG/Chica.jpg">
-    <p class="texto1-1">El lujo que mereces</p>
-    <p class="texto2-1">El descanso que necesitas</p>
+    <p class="texto1-1">Camas con tecnología americana</p>
+    <a  id="productosbtn2" href="productos.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Catálogo  <i class="fas fa-arrow-alt-circle-right"></i></a>
     </div>
   
   </div>
@@ -115,43 +117,52 @@ if(isset($_POST['submit'])){
 
  <div class="container">
 
-  <p   class="texto3">Colchones con tecnología americana</p>
-  <p   class="texto4">Creemos que la mejor experiencia en descanso inicia desde la selección de materiales finos de primer calidad</p>
+  <p   class="texto3">Inspirados en las olas del mar</p>
   <a  id="productosbtn1" href="productos.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Productos  <i class="fas fa-arrow-alt-circle-right"></i></a>
   <a  id="productosbtn6" href="productos.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Productos  <i class="fas fa-arrow-alt-circle-right"></i></a>
+  <img id="img6" src="IMG/Nueva Colección Comfort Life.jpg">
+  <div class="row">
+      <p class="texto3-1">Inspirados en las olas del mar</p>
+      </div>
       <div class="row">
-          <img id="img6" src="IMG/TMW.png">
-          <p class="texto3-1">Colchones con tecnología americana</p>
-          <p class="texto4-1">Creemos que la mejor experiencia en descanso inicia desde la selección de materiales finos de primer calidad</p>
-          <a  id="productosbtn" href="productos.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Productos  <i class="fas fa-arrow-alt-circle-right"></i></a>
+      <a  id="productosbtn" href="productos.html" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Nueva Colección  <i class="fas fa-arrow-alt-circle-right"></i></a>
       </div>
   </div>
 
   <div class="container">
 
     <div class="row">
-    <img id="img9" src="IMG/Logo Comfort LIfe (A).png">
+    <!-- <img id="img9" src="IMG/Logo Comfort LIfe (A).png">
     <img id="img9-1" src="IMG/Logo Comfort LIfe (A).png">
-    <img id="img9-2" src="IMG/Logo Comfort LIfe (A).png">
-    <img id="img8" src="IMG/Chico.jpg">
+    <img id="img9-2" src="IMG/Logo Comfort LIfe (A).png">-->
+    <img id="img8" src="IMG/Chico.jpg"> 
 
     
     <form id="formularioc" name="formularioc" method="post" action="">
       <h1>Contacto</h1>
-      <h4>Llena el formulario y pronto nos comunicaremos contigo</h4>
+      <h5>¿Quieres vender Camas Comfort Life? Llena este formulario con tus datos y pronto nos estaremos comunicando contigo.</h5>
       <hr color="white" size="5">
       <div class="form-group">
         <label for="formname">Nombre:</label>
         <input id="formname" name="formname" type="text" class="form-control">
       </div>
+
+      <div class="row" >
+        <div class="col">
       <div class="form-group">
         <label for="formphone">Teléfono:</label>
         <input id="formphone" name="formphone" type="number" class="form-control">
       </div>
+      </div>
+      <div class="col">
       <div class="form-group">
-        <label for="formemail">Correo:</label>
+        <label for="formemail">Correo electrónico:</label>
         <input id="formemail" name="formemail" type="email" class="form-control">
       </div>
+      </div>
+      
+      </div>
+
       <div class="form-group">
         <label for="formmsg">Mensaje:</label>
         <textarea id="formmsg" name="formmsg" cols="30" rows="10"></textarea>
@@ -186,7 +197,9 @@ if(isset($_POST['submit'])){
     </div>
   </div>
 
-
+  <br>
+  <br>
+  
   <section class="py-5 bg-voilet text-white">
     <div class="container">
         <div class="row">
@@ -214,7 +227,9 @@ if(isset($_POST['submit'])){
                     <li><a href="materiales.html" class="text-white">Materiales</a></li>
                     <li><a href="garantias.html" class="text-white">Garantía</a></li>
                     <li><a href="contacto.html" class="text-white">Contacto</a></li>
-                    <li><i id="facebooksquare" class="fab fa-facebook-square fa-2x"></i><a href="#" class="text-white">  /Camas ComfortLife</a></li>
+                    <li><i id="facebooksquare" class="fab fa-facebook-square fa-2x"></i><a href="#" class="text-white"></a>
+                    <i id="instagramsquare" class="fab fa-instagram fa-2x"></i><a href="#" class="text-white"></a>
+                    </li>
                 </ul>
             </div>
         </div>
